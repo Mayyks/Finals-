@@ -1,0 +1,46 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title> (STACK) </title>
+</head><body>
+<script type="text/javascript">
+
+
+		class Stack {
+			constructor() {
+			this.storage  = {}
+			this.size = 0
+			}		
+			
+			push(element) {
+			this.size++
+			this.storage[this.size] = element
+			console.log(this.storage)
+			}
+			
+			pop(){
+			let removed = this.storage[this.size]
+			delete this.storage[this.size]
+			this.size--
+			return removed
+			console.log(this.storage)
+			}
+			
+			peek() {
+			return this.storage[this.size]
+			console.log(this.storage)
+			}
+		}
+
+			const stack = new Stack()
+			
+			stack.push('Al James')
+			stack.push('Kiyo')
+			stack.push('Because')
+			
+			console.log(this.storage)		
+	
+	</script>
+	</body>
+	</html>
